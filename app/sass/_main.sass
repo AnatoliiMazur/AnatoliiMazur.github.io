@@ -3,6 +3,7 @@
 @import "vars"
 @import "_mixins/mixins"
 
+
 *
 	-webkit-box-sizing: border-box
 	-moz-box-sizing: border-box
@@ -52,6 +53,31 @@ body
 	max-width: 100%
 	height: auto
 
+
+.logo
+	padding-left: 60px
+	font-family: $font-family-OpenSans
+	text-transform: uppercase
+	text-align: center
+	line-height: 1
+	&__brand
+		font-size: 38px
+	&__description
+		letter-spacing: 0.5px
+		font-size: 12px
+	a
+		display: inline-block
+		color: $white
+		text-decoration: none
+		opacity: 1
+		@include trs
+		&:hover
+			opacity: .95
+
+
+
+
+
 .testfont
 	p
 		background-color: black
@@ -74,26 +100,26 @@ body
 			font-weight: 600
 			&::before
 				@include before-mi('\e84d')
+//
+//ul
+//	display: block
+//li
+//	display: block
+//a
+//	display: block
+//p
+//	display: block
+//	@include media-breakpoint-down(md)
+//		color: red
+//	@include media-breakpoint-up(lg)
+//		color: green
+//
+//.header
+//	background-color: #111
+//	@include media-breakpoint-down(xl)
+//
 
-ul
-	display: block
-li
-	display: block
-a
-	display: block
-p
-	display: block
-	@include media-breakpoint-down(md)
-		color: red
-	@include media-breakpoint-up(lg)
-		color: green
-
-.header
-	background-color: #111
-	@include media-breakpoint-down(xl)
-	
-
-
+ 
 //@include media-breakpoint-up(xs)
 //	.header
 //		background-color: yellow
@@ -115,28 +141,28 @@ p
 //		background-color: indigo
 
 
-@include media-breakpoint-down(xs)
-	.header
-		background-color: yellow
-
-@include media-breakpoint-down(sm)
-	.header
-		background-color: green
-
-@include media-breakpoint-down(md)
-	.header
-		background-color: red
-
-@include media-breakpoint-down(lg)
-	.header
-		background-color: blue
-
-@include media-breakpoint-down(xl)
-	.header
-		background-color: indigo
-		@include media-breakpoint-down(lg)
-		@include media-breakpoint-down(xs)
-		
+//@include media-breakpoint-down(xs)
+//	.header
+//		background-color: yellow
+//
+//@include media-breakpoint-down(sm)
+//	.header
+//		background-color: green
+//
+//@include media-breakpoint-down(md)
+//	.header
+//		background-color: red
+//
+//@include media-breakpoint-down(lg)
+//	.header
+//		background-color: blue
+//
+//@include media-breakpoint-down(xl)
+//	.header
+//		background-color: indigo
+//		@include media-breakpoint-down(lg)
+//		@include media-breakpoint-down(xs)
+//
 
 //
 //
