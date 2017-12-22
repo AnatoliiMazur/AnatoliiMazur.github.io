@@ -7,7 +7,8 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 15px;
-  background-color: #507BCC; }
+  background-color: #507BCC;
+  font-family: "OpenSansCondensed", sans-serif; }
 
 @font-face {
   font-family: "poppins";
@@ -9171,6 +9172,17 @@ body textarea:required:valid {
 html, body {
   height: 100%; }
 
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  list-style-type: none; }
+
 body {
   font-size: 16px;
   min-width: 320px;
@@ -9185,9 +9197,28 @@ body {
   max-width: 100%;
   height: auto; }
 
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center; }
+
+.nav a {
+  color: #ffffff;
+  font-size: 21px;
+  letter-spacing: .8px; }
+  .nav a:hover {
+    color: #000000; }
+
 .logo {
   padding-left: 60px;
-  font-family: "OpenSansCondensed", sans-serif;
   text-transform: uppercase;
   text-align: center;
   line-height: 1; }
