@@ -45,6 +45,7 @@ gulp.task('watch', ['pug', 'sass', 'js', 'browser-sync'], function() {
 	global.watch = true;
 	gulp.watch('app/pug/**/*.pug', ['pug']);
 	gulp.watch('app/sass/**/*.sass', ['sass']);
+	gulp.watch('app/**/*.scss', ['sass']);
 	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
 	gulp.watch('app/*.html', browserSync.reload);
 });
@@ -98,7 +99,8 @@ gulp.task('common-js', function() {
 
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
-		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/jquery/jquery.min.js',
+		'app/libs/jquery/jquery-ui.min.js',
 		'app/js/common.min.js' // Всегда в конце
 	])
 	.pipe(plumber())

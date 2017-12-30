@@ -1,8 +1,27 @@
 @import "../vars"
+@import "_mixins/mixins"
 
 .header
-	display: flex
-	justify-content: space-between
-	padding: 15px
+	position: fixed
+	top: 0
+	width: 100%
+	z-index: 1
+	padding: 15px 0
+	text-transform: uppercase
 	background-color: $primary
 	font-family: $font-family-OpenSans
+	@include trs
+	&__shrink
+		padding: 0
+		background-color: rgba($primary, .95)
+		&:hover
+			background-color: $primary
+		.logo, .nav
+			transform: scale(.8)
+		.logo
+			transform-origin: left
+		.nav
+			transform-origin: right
+	&__sticky
+		display: flex
+		justify-content: space-between
