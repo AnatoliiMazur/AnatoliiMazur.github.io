@@ -1,0 +1,34 @@
+[
+	{
+		"name": "Илья",
+		"nick": "Ilya",
+		"department": "html",
+		"headOfDepartment": true,
+		"yearsInCompany": 10,
+		"salary": 1000
+	},
+	{
+		"name": "Дима",
+		"nick": "Mosby",
+		"department": "moto",
+		"headOfDepartment": false,
+		"yearsInCompany": 3,
+		"salary": 100
+	},
+	{
+		"name": "Дима",
+		"nick": "Demon",
+		"department": "tm",
+		"headOfDepartment": true,
+		"yearsInCompany": 15,
+		"salary": 999999
+	},
+	{
+		"name": "Денис",
+		"nick": "Ragnar",
+		"department": "html",
+		"headOfDepartment": false,
+		"yearsInCompany": 5,
+		"salary": 200
+	}
+]

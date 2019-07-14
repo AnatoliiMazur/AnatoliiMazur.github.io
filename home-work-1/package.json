@@ -1,0 +1,10 @@
+{
+	"name": "tm-hw",
+	"version": "1.0.0",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"devDependencies": {
+		"node-static": "^0.7.11"
+	}
+}
